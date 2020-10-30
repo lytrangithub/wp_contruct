@@ -1,0 +1,1 @@
+<?php echo get_template_part( TEMPLATES_PARTS, 'slideshow' ); ?>

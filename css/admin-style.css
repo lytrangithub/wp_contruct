@@ -1,0 +1,201 @@
+.align-center
+{
+	text-align: center !important;
+}
+.error
+{
+	color: #ff0000;
+}
+.align-right
+{
+	text-align: right !important;
+}
+.prices
+{
+	display: flex;
+}
+.prices .left
+{
+	width: 40%;
+	display: inline-block;
+}
+.prices .right
+{
+	width: 60%;
+	display: inline-block;
+	padding-left: 10px;
+}
+.prices .left
+{
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	height: 400px;
+	overflow-y: auto;
+}
+.prices .left ul
+{
+	margin: 0;
+	padding: 0;
+}
+.prices .left ul li
+{
+	width: 100%;
+	cursor: pointer;
+	float: left;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0px;
+}
+.prices .left ul li:first-child
+{
+	border-top: 1px solid #ccc;
+}
+.prices .left ul li span
+{
+	padding: 8px 10px;
+	display: block;
+}
+.prices .left li span.active
+{
+	background: #007cba;
+	color: #fff;
+}
+.prices .right table
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+.prices .right table th, .prices .right table td
+{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+}
+.prices .right table input
+{
+	width: 100%;
+}
+#language-translation select
+{
+	width: 100%;
+}
+#language-translation table tr td
+{
+	vertical-align: middle;
+}
+#language-translation table tr td .lang-delete
+{
+	display: block;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+#language-translation .col-container-inner
+{
+	width: 70%;
+	margin-top: 20px;
+}
+#language-translation #save-lang
+{
+	float: left;
+}
+#language-translation #lang-add-row
+{
+	float: right;
+}
+#language-translation input.order
+{
+	width: 100%;
+	text-align: right;
+}
+#language-translation .lang-delete
+{
+	display: inline-block !important;
+	color: #ff0000;
+}
+.button-del
+{
+	color: #ff0000 !important;
+	border-color: #ff0000 !important;
+}
+.select-group
+{
+	display: inline-block;
+	width: 100%;
+	max-height: 300px;
+	overflow-y: auto;
+}
+/*
+* ============================================================
+* ====================== table ===============================
+* ============================================================
+*/
+.fl-wp-table {
+    border: #DFDFDF solid 1px;
+    background: #fff;
+    border-spacing: 0;
+    border-radius: 0;
+    table-layout: auto;
+    padding: 0;
+    margin: 10px 0px;
+    width: 100%;
+    clear: both;
+    box-sizing: content-box;
+    border-spacing: 0;
+}
+.fl-wp-table > thead > tr > th:first-child {
+    border-left-width: 0;
+}
+.fl-wp-table > thead > tr > th {
+    border-color: #E1E1E1;
+    border-width: 0 0 1px 1px;
+        border-left-width: 1px;
+}
+.fl-wp-table > tbody > tr > th, .fl-wp-table > thead > tr > th {
+    position: relative;
+    color: #333333;
+}
+.fl-wp-table > tbody > tr > th, .fl-wp-table > tbody > tr > td, .fl-wp-table > thead > tr > th, .fl-wp-table > thead > tr > td {
+    padding: 8px;
+    vertical-align: top;
+    background: #fff;
+    text-align: left;
+    border-style: solid;
+    font-weight: normal;
+}
+.fl-wp-table > tbody > tr:first-child > td {
+    border-top-width: 0;
+}
+.fl-wp-table > tbody > tr > td:first-child {
+    border-left-width: 0;
+}
+.fl-wp-table > tbody > tr > td {
+    border-color: #EDEDED;
+    border-width: 1px 0 0 1px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+}
+.fl-wp-table > tbody > tr > th, .fl-wp-table > tbody > tr > td, .fl-wp-table > thead > tr > th, .fl-wp-table > thead > tr > td {
+    padding: 8px;
+    vertical-align: top;
+    background: #fff;
+    text-align: left;
+    border-style: solid;
+    font-weight: normal;
+}
+.field-col-full
+{
+	width: 100%;
+}
+.tbl-error
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+.tbl-error tr th
+{
+	text-align: center;
+	font-weight: bold;
+}
+.tbl-error tr th, .tbl-error tr td
+{
+	padding: 8px;
+	border: 1px solid #ccc;
+}

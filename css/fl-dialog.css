@@ -1,0 +1,153 @@
+@charset "UTF-8";
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@-webkit-keyframes animatetop {
+    from {top: -1000px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -1000px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+.fl-modal
+{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 35px;
+    z-index: 1001;
+    /*-webkit-transition: opacity 600ms ease-in 0s;
+    transition: opacity 600ms ease-in 0s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.6s;
+    animation-name: animatetop;
+    animation-duration: 0.6s;*/
+}
+.fl-modal-inner
+{
+    margin: 0 auto;
+    max-width: 1024px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    height: 100%;
+    background: #fff;
+}
+.wp-admin .fl-modal
+{
+    z-index: 999999 !important;
+}
+.fl-modal-title
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    font-size: 1.2rem;
+    padding: 15px 40px 15px 15px;
+    font-weight: bold;
+    min-height: 40px;
+    background: #fff;
+    color: #fff;
+}
+.fl-modal .fl-modal-content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 40px;
+    z-index: 99;
+    overflow-y: auto;
+    background: #fff;
+}
+.fl-modal-backdrop
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    background: #000;
+    opacity: .7;
+    z-index: 50;
+}
+.fl-modal-close
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    margin: 0;
+    padding: 0;
+    color: #1d498b !important;
+    z-index: 1000;
+    cursor: pointer;
+    outline: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.fl-modal-close i
+{
+    /*position: relative;
+    top: 5px;*/
+}
+.fl-modal iframe
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.fl-modal .hidden-footer
+{
+    background: #F3F3F3;
+    position: absolute;
+    z-index: 11000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 24px;
+}
+.fl-modal.fl-modal-normal
+{
+    left: 30%;
+    right: 30%;
+    bottom: unset;
+}
+.fl-modal.fl-modal-normal .fl-modal-content
+{
+    bottom: unset;
+    padding: 50px 20px;
+}
+@media(max-width: 768px)
+{
+    .fl-modal
+    {
+        left: 30px;
+        right: 30px;
+    }
+}
+@media(max-width: 480px)
+{
+    .fl-modal
+    {
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+    }
+}

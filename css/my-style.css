@@ -1,0 +1,110 @@
+:root{
+    --primary-color: rgb(83, 171, 243);
+}
+a:hover,
+li:hover{
+    text-decoration: none;
+    color: #000 !important;
+}
+img{
+    width: 100%;
+}
+/* ==============================================================
+* =========================== Header ============================
+* ===============================================================
+*/
+#header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid #063f96;
+    background: var(--primary-color);
+    z-index: 1000;
+}
+#header .container{
+    background-color: var(--primary-color);
+}
+.nav-menu{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.nav-menu li{
+    line-height: 27px;
+    position: relative;
+}
+.menu-item{
+    padding: 16px 32px;
+}
+.menu-item a{
+    color: #fff;
+}
+.nav-menu li:hover{
+    background-color: rgb(184, 199, 211);
+}
+.search{
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.btn-search{
+    padding: 3px 8px;
+    margin: 0;
+    width: 80px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+.input-search{
+    border-radius: 12px;
+    height: 100%;
+    border: none;
+    padding: 0 8px;
+}
+/* menu con thứ nhất*/
+.sub-menu{
+    display: none;
+    position: absolute;
+    background-color: rgb(184, 199, 211);
+    margin-top: 16px;
+    width: 280px;
+    left: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+.menu-item:hover .sub-menu{
+    display: block;
+}
+.sub-menu .menu-item{
+    padding: 8px 32px;
+}
+.sub-menu li a{
+    width: 100%;
+}
+
+/* ==============================================================
+* ==========================/ Header ============================
+* ===============================================================
+*/
+
+/* ==============================================================
+* =========================== Footer ============================
+* ===============================================================
+*/
+#footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+}
+#footer .container{
+    background-color: var(--primary-color);
+    padding: 30px;
+}
+/* ==============================================================
+* ==========================/ Footer ============================
+* ===============================================================
+*/
